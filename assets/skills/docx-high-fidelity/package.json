@@ -1,0 +1,32 @@
+{
+  "name": "tool_ai_docx_skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DOCX high-fidelity skill scaffold and local deterministic pipeline",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pipeline": "tsx src/pipeline/run.ts",
+    "benchmark": "tsx src/pipeline/benchmark.ts",
+    "smoke:no-template": "tsx src/pipeline/run.ts --template-mode auto --instruction \"Generate a project weekly report with summary, risks, and next steps\" --out ./runs/smoke_no_template --finalizer none",
+    "smoke:profile": "tsx src/pipeline/run.ts --template-mode profile --template-profile business-report-a4 --instruction \"Generate a quarterly business brief\" --out ./runs/smoke_profile --finalizer none",
+    "smoke:source": "tsx src/pipeline/run.ts --template-mode source --source ./runs/smoke_no_template/rendered/final.docx --instruction \"Rewrite as a milestone progress summary\" --out ./runs/smoke_source --finalizer none",
+    "test:all": "npm run build && npm run smoke:no-template && npm run smoke:profile && npm run smoke:source"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "commander": "^14.0.1",
+    "docx": "^9.5.1",
+    "fast-xml-parser": "^5.3.0",
+    "jszip": "^3.10.1",
+    "pino": "^10.0.0",
+    "xpath": "^0.0.34",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
+

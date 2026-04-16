@@ -1,0 +1,5 @@
+id: skill.github-skill
+type: skill
+name: github-skill
+entry: SKILL.md
+version: 0.1.0

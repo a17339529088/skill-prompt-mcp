@@ -1,0 +1,12 @@
+{
+  "profileId": "business-report-a4",
+  "title": "Business Report A4",
+  "domain": "report",
+  "docMeta": {
+    "paperSize": "A4",
+    "margin": { "top": 2.54, "right": 2.54, "bottom": 2.54, "left": 2.54 },
+    "sections": 1,
+    "language": "zh-CN",
+    "defaultFont": "Calibri"
+  }
+}
