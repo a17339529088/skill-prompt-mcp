@@ -1,0 +1,5 @@
+id: mcp.codex-config
+type: mcp-resource
+name: Codex MCP 配置
+entry: mcp.json
+version: 0.1.0
