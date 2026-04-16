@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pencil": {
+      "command": "/Users/asd/.pencil/mcp/visual_studio_code/out/mcp-server-darwin-arm64",
+      "args": [
+        "--app",
+        "visual_studio_code"
+      ]
+    }
+  }
+}

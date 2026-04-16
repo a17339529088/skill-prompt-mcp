@@ -1,0 +1,5 @@
+id: rule.default
+type: rule
+name: default
+entry: default.rules
+version: 0.1.0

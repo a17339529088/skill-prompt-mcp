@@ -1,0 +1,58 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "ddg-search": {
+      "command": "npx",
+      "args": [
+        "duckduckgo-mcp-server@latest"
+      ],
+      "autoApprove": [
+        "duckduckgo_web_search"
+      ]
+    },
+    "drawio": {
+      "command": "npx",
+      "args": [
+        "@next-ai-drawio/mcp-server@latest"
+      ],
+      "autoApprove": [
+        "start_session",
+        "edit_diagram",
+        "export_diagram",
+        "create_new_diagram"
+      ]
+    },
+    "mysql-dev": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@keevor/mysql-mcp-server"
+      ],
+      "env": {
+        "DB_HOST": "staging.cj8ag6ykm6wj.ap-southeast-1.rds.amazonaws.com",
+        "DB_PORT": "3306",
+        "DB_USER": "admin",
+        "DB_PASSWORD": "!5233Gilbert",
+        "DB_DATABASE": "ry-vue"
+      },
+      "autoApprove": [
+        "list_tables",
+        "query",
+        "describe_table"
+      ]
+    },
+    "pencil": {
+      "command": "/Users/asd/.pencil/mcp/visual_studio_code/out/mcp-server-darwin-arm64",
+      "args": [
+        "--app",
+        "visual_studio_code"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,5 @@
+id: mcp.kiro-mcp
+type: mcp-resource
+name: Kiro MCP 配置
+entry: mcp.json
+version: 0.1.0

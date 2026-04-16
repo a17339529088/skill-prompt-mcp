@@ -1,0 +1,5 @@
+id: skill.repo
+type: skill
+name: 降低AIGC
+entry: SKILL.md
+version: 0.1.0
